@@ -1,5 +1,5 @@
-import React, {Component, CSSProperties} from "react";
-import echarts, {EChartOption} from "echarts";
+import React, { Component, CSSProperties } from "react";
+import echarts, { EChartOption } from "echarts";
 import _ from "lodash";
 
 interface IProps {
@@ -16,7 +16,16 @@ interface IProps {
 }
 
 interface IEvent {
-  eventName: "click" | "dblclick" | "mousedown" | "mousemove" | "mouseup" | "mouseover" | "mouseout" | "globalout" | "contextmenu";
+  eventName:
+    | "click"
+    | "dblclick"
+    | "mousedown"
+    | "mousemove"
+    | "mouseup"
+    | "mouseover"
+    | "mouseout"
+    | "globalout"
+    | "contextmenu";
   handler: (params: IHandlerParams) => void;
 }
 
@@ -54,21 +63,21 @@ interface IHandlerParams {
 export default class ReactEChart extends Component<IProps> {
   static defaultProps: IProps = {
     option: {},
-    opts: {devicePixelRatio: window.devicePixelRatio},
+    opts: { devicePixelRatio: window.devicePixelRatio }
   };
 
   divDom = React.createRef<HTMLDivElement>();
   chart: echarts.ECharts;
 
   componentDidMount() {
-    const {theme, opts, option, on} = this.props;
+    const { theme, opts, option, on } = this.props;
     this.chart = echarts.init(this.divDom.current, theme, opts);
     this.chart.setOption(option);
     on && this.onEvent(on);
   }
 
-  shouldComponentUpdate({option, style, opts}: Readonly<IProps>) {
-    const {style: prevStyle, opts: prevOpts} = this.props;
+  shouldComponentUpdate({ option, style, opts }: Readonly<IProps>) {
+    const { style: prevStyle, opts: prevOpts } = this.props;
     if (_.isEqual(prevStyle, style) && _.isEqual(prevOpts, opts)) {
       this.chart.setOption(option);
       return false;
