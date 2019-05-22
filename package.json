@@ -1,7 +1,8 @@
 {
   "name": "react-wk-echarts",
-  "version": "0.0.1",
-  "main": "index.tsx",
+  "version": "0.0.3",
+  "main": "lib/index.js",
+  "types": "@types/index.d.ts",
   "author": "mufeng",
   "license": "MIT",
   "dependencies": {

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "es7", "dom"],
+    "jsx": "react",
+    "allowUnreachableCode": true,
+    "declaration": true,
+    "declarationDir": "@types",
+    "outDir": "lib",
+    "types": ["echarts"]
+  },
+  "include": ["./src/*"]
+}

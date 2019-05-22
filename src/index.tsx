@@ -1,9 +1,9 @@
 import React, { Component, CSSProperties } from "react";
-import echarts, { EChartOption } from "echarts";
+import echarts from "echarts";
 import _ from "lodash";
 
 interface IProps {
-  option: EChartOption;
+  option: echarts.EChartOption;
   theme?: string | object;
   opts?: {
     devicePixelRatio?: number;
