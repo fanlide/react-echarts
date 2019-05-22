@@ -1,5 +1,5 @@
 {
-  "name": "react-echarts",
+  "name": "react-wk-echarts",
   "version": "0.0.1",
   "main": "index.tsx",
   "author": "mufeng",
@@ -17,5 +17,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": ""
+  "description": "echart的react简单包装",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanlide/react-echarts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fanlide/react-echarts/issues"
+  },
+  "homepage": "https://github.com/fanlide/react-echarts#readme"
 }
