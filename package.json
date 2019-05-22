@@ -1,19 +1,17 @@
 {
   "name": "react-wk-echarts",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "lib/index.js",
   "types": "@types/index.d.ts",
   "author": "mufeng",
   "license": "MIT",
   "dependencies": {
+    "@types/echarts": "^4.1.9",
+    "@types/lodash": "^4.14.130",
+    "@types/react": "^16.8.18",
     "echarts": "^4.2.1",
     "lodash": "^4.17.11",
     "react": "^16.8.6"
-  },
-  "devDependencies": {
-    "@types/echarts": "^4.1.9",
-    "@types/lodash": "^4.14.130",
-    "@types/react": "^16.8.18"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

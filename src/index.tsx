@@ -97,5 +97,3 @@ export default class ReactEChart extends Component<IProps> {
 
   render = () => <div ref={this.divDom} style={this.props.style} />;
 }
-
-export const ECharts = echarts;
