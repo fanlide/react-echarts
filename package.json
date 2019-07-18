@@ -1,16 +1,16 @@
 {
   "name": "react-wk-echarts",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "lib/index.js",
   "types": "@types/index.d.ts",
   "author": "mufeng",
   "license": "MIT",
   "dependencies": {
     "@types/echarts": "^4.1.9",
-    "@types/lodash": "^4.14.130",
-    "@types/react": "^16.8.18",
+    "@types/lodash": "^4.14.136",
+    "@types/react": "^16.8.23",
     "echarts": "^4.2.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.14",
     "react": "^16.8.6"
   },
   "scripts": {
